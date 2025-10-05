@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="home.html">ICT Department</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold">Academics</h1>
+      <p class="lead">Explore our courses, curriculum, and academic structure</p>
+    </div>
+  </header>
+
+  <!-- Courses Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center fw-bold">Courses Offered</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">B.Sc. in ICT</h5>
+              <p class="card-text">Undergraduate program focusing on core computer science, networking, and emerging technologies.</p>
+              <a href="pdf/bscit-sem2.pdf" class="btn btn-primary" download>Download Syllabus</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">M.Sc. in ICT</h5>
+              <p class="card-text">Postgraduate program specializing in advanced computing, research, and industry-ready skills.</p>
+              <a href="pdf/msc_ict_syllabus.pdf" class="btn btn-primary" download>Download Syllabus</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Ph.D. in ICT</h5>
+              <p class="card-text">Doctoral program for research and innovation in information and communication technology.</p>
+              <a href="pdf/phd_syllabus.pdf" class="btn btn-primary" download>Download Syllabus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Structure with Canvas -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Academic Structure</h2>
+      <canvas id="academicChart" width="600" height="400" class="mx-auto d-block border rounded shadow"></canvas>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <small>&copy; 2025 ICT Department. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('academicChart');
+    const ctx = canvas.getContext('2d');
+  
+    // Title Box
+    ctx.fillStyle = "#0d6efd";
+    ctx.fillRect(200, 30, 200, 40);
+    ctx.fillStyle = "#fff";
+    ctx.font = "16px Arial";
+    ctx.textAlign = "center";
+    ctx.fillText("Bachelor of Science", 300, 55);
+  
+    // Semester boxes
+    ctx.fillStyle = "#198754";
+    ctx.fillRect(50, 120, 150, 35);
+    ctx.fillRect(225, 120, 150, 35);
+    ctx.fillRect(400, 120, 150, 35);
+  
+    ctx.fillStyle = "#fff";
+    ctx.fillText("Semester 1-2", 125, 143);
+    ctx.fillText("Semester 3-4", 300, 143);
+    ctx.fillText("Semester 5-6", 475, 143);
+  
+    // Subjects row
+    ctx.fillStyle = "#ffc107";
+    ctx.fillRect(100, 220, 100, 30);
+    ctx.fillRect(250, 220, 100, 30);
+    ctx.fillRect(400, 220, 100, 30);
+  
+    ctx.fillStyle = "#000";
+    ctx.font = "14px Arial";
+    ctx.fillText("Core Courses", 150, 240);
+    ctx.fillText("Electives", 300, 240);
+    ctx.fillText("Internship", 450, 240);
+  
+    // Connectors
+    ctx.strokeStyle = "#000";
+    ctx.beginPath();
+    ctx.moveTo(300, 70);
+    ctx.lineTo(125, 120);
+    ctx.moveTo(300, 70);
+    ctx.lineTo(300, 120);
+    ctx.moveTo(300, 70);
+    ctx.lineTo(475, 120);
+  
+    ctx.moveTo(125, 155);
+    ctx.lineTo(150, 220);
+    ctx.moveTo(300, 155);
+    ctx.lineTo(300, 220);
+    ctx.moveTo(475, 155);
+    ctx.lineTo(450, 220);
+    ctx.stroke();
+  </script>
+</body>
+</html>

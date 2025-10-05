@@ -1,0 +1,117 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #002147; /* Dark Blue Heading */
+}
+
+h4 {
+    color: #ff6600; /* Orange accent */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #002147 !important; /* VNSGU dark blue */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ff6600 !important;
+}
+
+.nav-link {
+    color: white !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #ff6600;
+    color: white !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+.bg-light {
+    background-color: #f1f5f9 !important;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+/* Faculty Cards */
+#faculty img {
+    border: 3px solid #002147;
+    margin-bottom: 10px;
+}
+
+#faculty h5 {
+    color: #ff6600;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #002147;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff6600;
+}
+
+.btn-success {
+    background-color: #ff6600;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #cc5200;
+}
+
+/* Contact Form */
+#contactForm input, 
+#contactForm textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #002147;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
