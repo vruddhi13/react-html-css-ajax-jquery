@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTodoList();
         taskInput.value = '';
         
-        // Chatbot acknowledgment
+        // Chatbot acknowledgment for todoapp
         addBotMessage(`✅ Task added: "${text}"`);
     }
     
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderTodoList();
     }
     
-    // Edit a todo
+    // Edit a todo app
     function editTodo(id, newText) {
         if (newText.trim() === '') {
             return;
@@ -320,7 +320,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Delete a todo
+    // Delete a todo app
     function deleteTodo(id) {
         todos = todos.filter(todo => todo.id !== id);
         saveData();
@@ -718,3 +718,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     init();
 });
+
